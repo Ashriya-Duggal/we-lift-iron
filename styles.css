@@ -1,0 +1,101 @@
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/pexels-photo-841130.jpeg");
+  background-repeat: no-repeat;
+  margin: 0;
+  background-size: cover;
+}
+.first {
+  display: grid;
+  grid-template-columns: (2,1fr);
+  grid-template-areas: "a b c d" ;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.navbar {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  background-color: #5c5c5c;
+  text-align: center;
+  margin: 20px;
+  padding: 7px;
+  opacity: 0.8;
+}
+.navbar:hover{
+  color: black;
+  font-weight: bold;
+  background-color: white;
+}
+.content {
+  text-align: center;
+  padding-top: 10%;
+}
+h1 {
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 60px;
+}
+p {
+  color: white;
+}
+.input{
+  margin: 5px;
+text-align: center;
+padding: 5px;
+}
+.input:hover{
+  background-color: beige;
+}
+#Gender{
+  width: 10.3%;
+}
+.btn{
+  margin: 20px;
+  color: white;
+  width: 100px;
+  padding: 5px;
+  background-color: #341614;
+  font-family: "Noto Sans", sans-serif;
+}
+.btn:hover{
+  background-color: brown;
+}
+.footer{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.logo{
+  width: 15%;
+  height: 30%;
+  position: absolute;
+  margin-left: 1px;
+}
+.one{
+  position: absolute;
+   right: 0;
+}
+@media screen and (max-width: 678px)
+  {
+    .first{
+     grid-template-areas:
+      "a b"
+     "c d";
+    }
+    #Gender{
+      width: 175px;
+    }
+    body{
+      height: 120vh;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .first{
+      grid-template-areas:
+       "a"
+       "b"
+      "c"
+      "d";
+     }
+  }
