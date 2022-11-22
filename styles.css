@@ -76,7 +76,7 @@ padding: 5px;
   position: absolute;
    right: 0;
 }
-@media screen and (max-width: 678px)
+@media screen and (max-width: 650px)
   {
     .first{
      grid-template-areas:
@@ -90,7 +90,7 @@ padding: 5px;
       height: 120vh;
     }
   }
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 350px){
     .first{
       grid-template-areas:
        "a"
